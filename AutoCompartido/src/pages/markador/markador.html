@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-toolbar color="primary" >
+    <ion-title>Definir Ruta de Viaje</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content class="imagenciudad">
+    <div id="mapas"></div>
+     <div id="map"></div>
+     <div>
+     <button class="colorblanco" ion-button outline round [disabled]="!isenabled2" (click)="inicio()" block>AGREGAR PUNTO A LA RUTA</button>
+     <button class="colorblanco" ion-button outline round (click)="loadMap(latOri, longOri)" block>REINICIAR MAPA</button>
+     <button class="colorblanco" ion-button outline round [disabled]="!isenabled" (click)="fin()" block>CALCULAR RUTA A LA UCB</button>
+     <button class="colorblanco" ion-button outline round [disabled]="!isenabled1" (click)="guardar(ruta)" block>GUARDAR RUTA</button>
+     <button class="colorblanco" ion-button outline round [disabled]="!isenabled3"(click)=" presentPrompt2()" block>INICIAR RECORRIDO</button>
+     <button class="colorblanco" ion-button outline round (click)="seleccinaRuta()" block>SELECCIONAR RUTA</button>
+    </div>
+</ion-content>

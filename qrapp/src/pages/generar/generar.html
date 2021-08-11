@@ -1,0 +1,28 @@
+<!--
+  Generated template for the GenerarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Generar QR</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item >
+    <ion-input type="text" placeholder="Texto" [(ngModel)]="QRdata"></ion-input>
+  </ion-item>
+  <button ion-button icon-left full (click)="generate()"><ion-icon name="barcode"></ion-icon>Create QRCode</button>
+
+  <ion-card *ngIf="createCode">
+    <ngx-qrcode [qrc-value]="createCode"></ngx-qrcode>
+    <ion-card-content>
+      <p>Contenido: {{createCode}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

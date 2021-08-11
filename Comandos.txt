@@ -1,0 +1,11 @@
+ionic cordova plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="AIzaSyARokNtzS531IucAJUjhKogio03QVBZQrk" --variable API_KEY_FOR_IOS="AIzaSyARokNtzS531IucAJUjhKogio03QVBZQrk"
+npm install --save @ionic-native/google-maps
+npm install --save @ionic-native/geolocation
+npm insatll firebase angularfire2 --save
+npm i rxjs@6 rxjs-compat@6 promise-polyfill --save
+npm install --save @ionic-native/core
+npm install --save ionic2-rating
+
+ionic cordova plugin add phonegap-plugin-barcodescanner
+npm install --save @ionic-native/barcode-scanner@4
+npm install ngx-qrcode2 --save

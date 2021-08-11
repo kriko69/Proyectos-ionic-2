@@ -1,0 +1,7 @@
+{
+  "name": "trabajo-mysql",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

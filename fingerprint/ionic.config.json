@@ -1,0 +1,7 @@
+{
+  "name": "fingerprint",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

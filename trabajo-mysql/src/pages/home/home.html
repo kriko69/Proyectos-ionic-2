@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      CRUD
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (ngSubmit)="createEntry()">
+    <ion-item>
+      <ion-label>Correo</ion-label>
+      <ion-input type="text" [(ngModel)]="datos.correo" name="correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="datos.password" name="password"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" block>Agregar Usuario</button>
+  </form>
+  <button ion-button type="button" (click)="logForm()" block>Agregar Usuario</button>
+</ion-content>

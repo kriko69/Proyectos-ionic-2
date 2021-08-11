@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button block (click)="entrarGaleria()">Elegir foto de Galeria</button>
+  <button ion-button block (click)="tomarConCamara()" >Tomar foto con la camara</button>
+  <button ion-button block (click)="borrar()" >Quitar Foto</button>
+  <img [src]="foto" *ngIf="foto"/>
+  <p *ngIf="!foto">No cargo foto</p>
+</ion-content>

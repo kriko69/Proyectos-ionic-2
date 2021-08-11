@@ -1,0 +1,29 @@
+<!--
+  Generated template for the UsuarioPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>usuario</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>email</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="usuario.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario.password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block (click)="actualizar(usuario)"> Actualizar</button>
+  <button ion-button block (click)="borrar(usuario.id_usuario)"> Borrar</button>
+</ion-content>

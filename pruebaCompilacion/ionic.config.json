@@ -1,0 +1,7 @@
+{
+  "name": "pruebaCompilacion",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

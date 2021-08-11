@@ -1,0 +1,7 @@
+{
+  "name": "trabajo-imagenes",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
